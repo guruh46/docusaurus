@@ -43,3 +43,7 @@ jobs:
 
       - name: Prettier Code
         run: yarn format:diff
+        
+      - name: Prettier Fix
+        uses: WorkOfStan/prettier-fix@v1.0.0
+            
