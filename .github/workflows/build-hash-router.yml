@@ -19,7 +19,7 @@ permissions:
   contents: write
 
 jobs:
-  build: hash router yml
+  build: 
     name: Build Hash Router
     timeout-minutes: 30
     runs-on: ubuntu-latest
@@ -83,8 +83,7 @@ jobs:
   #      uses: actions/deploy-pages@v4
 
 
-
-    - name: Setup Java JDK
+    -name: Setup Java JDK
   uses: actions/setup-java@v4.4.0
   with:
     # The Java version to set up. Takes a whole or semver Java version. See examples of supported syntax in README file
