@@ -129,7 +129,7 @@ jobs:
 
 
 
-    - name: Download a Build Artifact
+    -name: Download a Build Artifact
   uses: actions/download-artifact@v4.1.8
   with:
     # Name of the artifact to download. If unspecified, all artifacts for the run are downloaded.
@@ -149,7 +149,7 @@ jobs:
 
 
 
-    - name: Setup Go environment
+    -name: Setup Go environment
   uses: actions/setup-go@v5.0.2
   with:
     # The Go version to download (if necessary) and use. Supports semver spec and ranges. Be sure to enclose this option in single quotation marks.
@@ -169,7 +169,7 @@ jobs:
 
 
 
-    - name: Close Stale Issues
+    -name: Close Stale Issues
   uses: actions/stale@v9.0.0
   with:
     # Token for the repository. Can be passed in using `{{ secrets.GITHUB_TOKEN }}`.
@@ -281,7 +281,7 @@ jobs:
 
 
 
-    - name: First interaction
+    -name: First interaction
   uses: actions/first-interaction@v1.3.0
   with:
     # Token for the repository. Can be passed in using {{ secrets.GITHUB_TOKEN }}
