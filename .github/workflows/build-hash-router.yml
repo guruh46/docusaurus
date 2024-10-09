@@ -19,7 +19,7 @@ permissions:
   contents: write
 
 jobs:
-  build:
+  build: hash router yml
     name: Build Hash Router
     timeout-minutes: 30
     runs-on: ubuntu-latest
